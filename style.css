@@ -10,6 +10,10 @@
   justify-content: space-around;
 }
 
+.footer {
+  background-color: #f9f7f3;
+}
+
 .btn-1 {
   background-color: #b4f461;
   height: 30px;
