@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav class="navbar flex justify-around align-middle">
-        <button class="btn-1">Blog</button>
+        <button class="btn-1 justify-center"><a href="blog.html">Blog</a></button>
         <button class="flex justify-center align-bottom">
           <img src="./assets/logo.png" alt="" />Donate Bangladesh
         </button>
@@ -31,7 +31,7 @@
         <button class="btn-3">History</button>
       </div>
     </main>
-    <section class="width-1 flex mx-auto">
+    <section class="width-1 block mx-auto">
       <div class="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img src="./assets/noakhali.png" alt="Noakhali Flood" />
@@ -58,11 +58,18 @@
             />
           </form>
 
-          <div class="card-actions justify-center">
-            <button id="noakhaliDonate" class="btn btn-primary">Donate</button>
+          <div class="flex justify-center">
+            <button id="noakhaliDonate" class="btn btn-primary">
+              Donate Now
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- transition history  -->
+       <div id="transitionHistory">
+        <h1 class="text-7xl">Transition History</h1>
+       </div>
     </section>
     <footer class="footer"></footer>
     <script src="app.js"></script>
