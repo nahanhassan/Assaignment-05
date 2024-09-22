@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #f9f7f3;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-1 {
+  background-color: #b4f461;
+  height: 30px;
+  width: 60px;
+  border: 1px solid red;
+  border-radius: 5px;
+font-weight: bold;
+}
+
+.btn-2 {
+  background-color: #b4f461;
+  height: 40px;
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.btn-3 {
+  background-color: white;
+  height: 40px;
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.width-1{
+  width: 800px;
+}
