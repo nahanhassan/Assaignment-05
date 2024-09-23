@@ -8,19 +8,14 @@ function getTextById(id) {
   return textValue;
 }
 
-let d = new Date();
-let nowTime = `${d.getDate()}-${
-  d.getMonth() + 1
-}-${d.getFullYear()}; ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
-
 let navDisplay = document.getElementById("navDisplay");
-let noakhaliDisplay = document.getElementById("noakhaliDisplay");
-let noakhaliDonate = document.getElementById("noakhaliAmount");
 
 document
   .getElementById("noakhaliDonate")
   .addEventListener("click", function (e) {
     e.preventDefault();
+    let noakhaliDisplay = document.getElementById("noakhaliDisplay");
+    let noakhaliDonate = document.getElementById("noakhaliAmount");
     let noakhaliAmount = getValueById("noakhaliAmount");
     let noakhaliDisplayAmount = getTextById("noakhaliDisplay");
     let navDisplayAmount = getTextById("navDisplay");
@@ -32,9 +27,14 @@ document
       isNaN(noakhaliAmount) === true
     ) {
       alert("Please check your amount");
-      const p = document.createElement("p");
-      p.innerText = `${nowTime}:: Invalid Transition.`;
-      document.getElementById("transitionHistory").appendChild(p);
+      const div = document.createElement("div");
+      div.innerHTML = `
+
+      <h2 class="text-xl" > Invalid Transition</h2>
+      <p>Date: ${new Date()}</p>
+
+      `;
+      document.getElementById("transitionHistory").appendChild(div);
     } else {
       let noakhaliNewAmount = noakhaliAmount + noakhaliDisplayAmount;
       let navNewAmount = navDisplayAmount - noakhaliAmount;
@@ -43,8 +43,13 @@ document
       noakhaliDonate.value = "";
       navDisplay.innerText = navNewAmount;
 
-      const p = document.createElement("p");
-      p.innerText = ` ${nowTime}:: Donation Amount: ${noakhaliAmount}, Donation Name: Noakhali`;
-      document.getElementById("transitionHistory").appendChild(p);
+      const div = document.createElement("div");
+      div.innerHTML = `
+
+      <h4 class="text-xl" > ${noakhaliAmount} Taka is Donated for Flood Relief in Noakhali ,Bangladesh</h4>
+      <p>Date: ${new Date()}</p>
+
+      `;
+      document.getElementById("transitionHistory").appendChild(div);
     }
   });

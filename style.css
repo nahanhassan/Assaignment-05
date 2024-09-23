@@ -8,6 +8,9 @@
   background-color: #f9f7f3;
   display: flex;
   justify-content: space-around;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 
 .footer {
@@ -18,26 +21,28 @@
   background-color: #b4f461;
   height: 30px;
   width: 60px;
-  border: 1px solid red;
+
   border-radius: 5px;
-font-weight: bold;
+  font-weight: bold;
 }
 
 .btn-2 {
   background-color: #b4f461;
+  font-weight: bold;
   height: 40px;
   width: 150px;
-  border: 1px solid red;
+  border: 1px solid rgb(206, 199, 199);
   border-radius: 10px;
 }
 .btn-3 {
   background-color: white;
   height: 40px;
   width: 150px;
-  border: 1px solid red;
+  font-weight: bold;
+  border: 1px solid rgb(206, 199, 199);
   border-radius: 10px;
 }
 
-.width-1{
-  width: 800px;
+.width-1 {
+  width: 1480px;
 }

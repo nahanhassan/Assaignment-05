@@ -15,11 +15,13 @@
   <body>
     <header>
       <nav class="navbar flex justify-around align-middle">
-        <button class="btn-1 justify-center"><a href="blog.html">Blog</a></button>
-        <button class="flex justify-center align-bottom">
-          <img src="./assets/logo.png" alt="" />Donate Bangladesh
+        <button class="btn-1 justify-center">
+          <a href="blog.html">Blog</a>
         </button>
-        <button class="flex justify-center align-bottom">
+        <button class="flex justify-center align-bottom font-bold">
+          <img src="./assets/logo.png" alt="" /> Donate Bangladesh
+        </button>
+        <button class="flex justify-center align-bottom font-bold">
           <img src="./assets/coin.png" alt="" />
           <span id="navDisplay">5500</span> BDT
         </button>
@@ -31,15 +33,15 @@
         <button class="btn-3">History</button>
       </div>
     </main>
-    <section class="width-1 block mx-auto">
+    <section class="width-1 mx-auto">
       <div class="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img src="./assets/noakhali.png" alt="Noakhali Flood" />
         </figure>
-        <div class="card-body">
+        <div class="card-body w-16">
           <div class="flex justify-start align-bottom">
-            <img src="./assets/coin.png" alt="" />
-            <span id="noakhaliDisplay">500</span>BDT
+            <img class=" bg-orange-100" src="./assets/coin.png" alt="" />
+            <span id="noakhaliDisplay" class="bg-orange-100">0</span> <span class="bg-orange-100">BDT</span>
           </div>
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
           <p>
@@ -50,16 +52,16 @@
             relief efforts and making a positive impact on the lives of those in
             need.
           </p>
-          <form class="flex justify-center">
-            <input
+          <form class="justify-start">
+            <input class="border-slate-200"
               id="noakhaliAmount"
               type="text"
               placeholder="Write Donation Amount"
             />
           </form>
 
-          <div class="flex justify-center">
-            <button id="noakhaliDonate" class="btn btn-primary">
+          <div class="justify-start">
+            <button id="noakhaliDonate" class="btn font-bold bg-lime-500 text-black">
               Donate Now
             </button>
           </div>
@@ -67,9 +69,9 @@
       </div>
 
       <!-- transition history  -->
-       <div id="transitionHistory">
+      <div id="transitionHistory">
         <h1 class="text-7xl">Transition History</h1>
-       </div>
+      </div>
     </section>
     <footer class="footer"></footer>
     <script src="app.js"></script>
