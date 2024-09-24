@@ -12,8 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Assaignment-05|Donation</title>
   </head>
-  <body>
-    <header>
+  <body class="relative">
+    <header class="sticky top-0 z-10">
       <nav class="navbar flex justify-around align-middle">
         <button class="btn-1 justify-center">
           <a href="blog.html">Blog</a>
@@ -23,25 +23,30 @@
         </button>
         <button class="flex justify-center align-bottom font-bold">
           <img src="./assets/coin.png" alt="" />
-          <span id="navDisplay">5500</span> BDT
+          <span id="navDisplay" class="font-bold">5500</span> BDT
         </button>
       </nav>
+      <main>
+        <div class="hero-section flex justify-center mt-6">
+          <button id="mainDonation" class="btn-2 mx-5">Donation</button>
+          <button id="mainHistory" class="btn-3">History</button>
+        </div>
+      </main>
     </header>
-    <main>
-      <div class="hero-section flex justify-center mt-6">
-        <button class="btn-2 mx-5">Donation</button>
-        <button class="btn-3">History</button>
-      </div>
-    </main>
-    <section class="width-1 mx-auto">
-      <div class="card lg:card-side bg-base-100 shadow-xl">
+
+    <!-- toggle button  -->
+
+    <section id="donationHistory" class="width-1 mx-auto ">
+      <!-- noakhali  -->
+      <div class="card lg:card-side bg-base-100 shadow-xl mt-6">
         <figure>
           <img src="./assets/noakhali.png" alt="Noakhali Flood" />
         </figure>
         <div class="card-body w-16">
           <div class="flex justify-start align-bottom">
-            <img class=" bg-orange-100" src="./assets/coin.png" alt="" />
-            <span id="noakhaliDisplay" class="bg-orange-100">0</span> <span class="bg-orange-100">BDT</span>
+            <img class="bg-orange-100" src="./assets/coin.png" alt="" />
+            <span id="noakhaliDisplay" class="bg-orange-100">0</span>
+            <span class="bg-orange-100">BDT</span>
           </div>
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
           <p>
@@ -53,7 +58,8 @@
             need.
           </p>
           <form class="justify-start">
-            <input class="border-slate-200"
+            <input
+              class="border-slate-200"
               id="noakhaliAmount"
               type="text"
               placeholder="Write Donation Amount"
@@ -61,16 +67,107 @@
           </form>
 
           <div class="justify-start">
-            <button id="noakhaliDonate" class="btn font-bold bg-lime-500 text-black">
+            <button
+              id="noakhaliDonate"
+              class="btn font-bold bg-lime-500 text-black"
+            >
               Donate Now
             </button>
           </div>
         </div>
       </div>
 
-      <!-- transition history  -->
+      <!-- feni  -->
+
+      <div class="card lg:card-side bg-base-100 shadow-xl mt-6">
+        <figure>
+          <img src="./assets/feni.png" alt="Feni Flood" />
+        </figure>
+        <div class="card-body w-16">
+          <div class="flex justify-start align-bottom">
+            <img class="bg-orange-100" src="./assets/coin.png" alt="" />
+            <span id="feniDisplay" class="bg-orange-100">600</span>
+            <span class="bg-orange-100">BDT</span>
+          </div>
+          <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+          <p>
+            The recent floods in Feni have devastated local communities, leading
+            to severe disruption and loss. Your generous donation will help
+            provide immediate aid, including food, clean water, and medical
+            supplies, to those affected by this calamity. Together, we can offer
+            crucial support and help rebuild lives in the aftermath of this
+            disaster. Every contribution counts towards making a real
+            difference. Please consider donating today to assist those in urgent
+            need.
+          </p>
+          <form class="justify-start">
+            <input
+              class="border-slate-200"
+              id="feniAmount"
+              type="text"
+              placeholder="Write Donation Amount"
+            />
+          </form>
+
+          <div class="justify-start">
+            <button
+              id="feniDonate"
+              class="btn font-bold bg-lime-500 text-black"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dhaka  -->
+
+      <div class="card lg:card-side bg-base-100 shadow-xl mt-6">
+        <figure>
+          <img src="./assets/dhaka.png" alt="Dhaka Flood" />
+        </figure>
+        <div class="card-body w-16">
+          <div class="flex justify-start align-bottom">
+            <img class="bg-orange-100" src="./assets/coin.png" alt="" />
+            <span id="dhakaDisplay" class="bg-orange-100">2400</span>
+            <span class="bg-orange-100">BDT</span>
+          </div>
+          <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+          <p>
+            The recent Quota movement has resulted in numerous injuries and
+            significant hardship for many individuals. Your support is crucial
+            in providing medical assistance, rehabilitation, and necessary
+            supplies to those affected. By contributing, you help ensure that
+            injured individuals receive the care and support they need during
+            this challenging time. Every donation plays a vital role in
+            alleviating their suffering and aiding in their recovery. Please
+            consider making a donation to support these brave individuals in
+            their time of need.
+          </p>
+          <form class="justify-start">
+            <input
+              class="border-slate-200"
+              id="dhakaAmount"
+              type="text"
+              placeholder="Write Donation Amount"
+            />
+          </form>
+
+          <div class="justify-start">
+            <button
+              id="dhakaDonate"
+              class="btn font-bold bg-lime-500 text-black"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- transition history  -->
+    <section>
       <div id="transitionHistory">
-        <h1 class="text-7xl">Transition History</h1>
+        <h1 class="text-7xl hidden">Transition History</h1>
       </div>
     </section>
     <footer class="footer"></footer>
