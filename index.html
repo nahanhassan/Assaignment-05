@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resp.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -36,14 +37,14 @@
 
     <!-- toggle button  -->
 
-    <section id="donationHistory" class="width-1 mx-auto ">
+    <section id="donationHistory" class="width-1 mx-auto">
       <!-- noakhali  -->
       <div class="card lg:card-side bg-base-100 shadow-xl mt-6">
         <figure>
           <img src="./assets/noakhali.png" alt="Noakhali Flood" />
         </figure>
         <div class="card-body w-16">
-          <div class="flex justify-start align-bottom">
+          <div class="lg:flex lg:justify-start lg:align-bottom">
             <img class="bg-orange-100" src="./assets/coin.png" alt="" />
             <span id="noakhaliDisplay" class="bg-orange-100">0</span>
             <span class="bg-orange-100">BDT</span>
@@ -166,9 +167,27 @@
     </section>
     <!-- transition history  -->
     <section>
-      <div id="transitionHistory">
-        <h1 class="text-7xl hidden">Transition History</h1>
+      <div id="transitionHistory" class="hidden">
+
       </div>
+    </section>
+    <!-- modal  -->
+    <section>
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold mx-auto">Congrates!</h3>
+          <img src="./assets/coin.png" alt="" />
+          <p class="py-4">You have donated for humanity</p>
+          <h3 class="text-lg font-bold">Successfully</h3>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
     <footer class="footer"></footer>
     <script src="app.js"></script>

@@ -64,6 +64,7 @@ document
       noakhaliDisplay.innerText = noakhaliNewAmount;
       noakhaliDonate.value = "";
       navDisplay.innerText = navNewAmount;
+      my_modal_5.showModal();
 
       const div = document.createElement("div");
       div.innerHTML = `
@@ -96,10 +97,10 @@ document.getElementById("dhakaDonate").addEventListener("click", function (e) {
     alert("Please check your amount");
     const div = document.createElement("div");
     div.innerHTML = `
-
+    <div class="bg-slate-50 mt-1 mx-auto w-5/6">
       <h2 class="text-xl" > Invalid Transition</h2>
       <p>Date: ${new Date()}</p>
-
+</div>
       `;
     document.getElementById("transitionHistory").appendChild(div);
   } else {
@@ -109,13 +110,14 @@ document.getElementById("dhakaDonate").addEventListener("click", function (e) {
     dhakaDisplay.innerText = dhakaNewAmount;
     dhakaDonate.value = "";
     navDisplay.innerText = navNewAmount;
+    my_modal_5.showModal();
 
     const div = document.createElement("div");
     div.innerHTML = `
-
+    <div class="bg-slate-50 mt-1 mx-auto w-5/6">
       <h4 class="text-xl" > ${dhakaAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h4>
       <p>Date: ${new Date()}</p>
-
+</div>
       `;
     document.getElementById("transitionHistory").appendChild(div);
   }
@@ -140,10 +142,10 @@ document.getElementById("feniDonate").addEventListener("click", function (e) {
     alert("Please check your amount");
     const div = document.createElement("div");
     div.innerHTML = `
-
+    <div class="bg-slate-50 mt-1 mx-auto w-5/6">
       <h2 class="text-xl" > Invalid Transition</h2>
       <p>Date: ${new Date()}</p>
-
+</div>
       `;
     document.getElementById("transitionHistory").appendChild(div);
   } else {
@@ -153,13 +155,14 @@ document.getElementById("feniDonate").addEventListener("click", function (e) {
     feniDisplay.innerText = feniNewAmount;
     feniDonate.value = "";
     navDisplay.innerText = navNewAmount;
+    my_modal_5.showModal();
 
     const div = document.createElement("div");
     div.innerHTML = `
-
+    <div class="bg-slate-50 mt-1 mx-auto w-5/6">
       <h4 class="text-xl" > ${feniAmount} Taka is Donated for Flood Relief in Feni ,Bangladesh</h4>
       <p>Date: ${new Date()}</p>
-
+</div>
       `;
     document.getElementById("transitionHistory").appendChild(div);
   }
